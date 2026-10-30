@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#180817" />
+  <title>Five Months of Us — A Secret Love Letter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="sky" aria-hidden="true">
+    <div class="nebula nebula-one"></div>
+    <div class="nebula nebula-two"></div>
+    <div id="stars"></div>
+    <div id="petals"></div>
+    <div id="hearts"></div>
+    <div id="shooting-stars"></div>
+    <div id="magic-burst"></div>
+  </div>
+
+  <main>
+    <section id="gate" class="gate-screen">
+      <div class="gate-ornament">✦ &nbsp; A SECRET FOR ONE SO DEAR &nbsp; ✦</div>
+      <p class="eyebrow">A little wonder, made only for thee</p>
+      <h1>Somewhere between a thousand stars<br>and a million roses, <em>a secret awaits thee...</em></h1>
+      <p class="gate-copy">A word known only to the heart that holds the key.</p>
+
+      <div class="puzzle-shell">
+        <div class="puzzle-heading">
+          <span class="tiny-crown">♕</span>
+          <h2>The Secret Word</h2>
+          <span class="tiny-crown">♕</span>
+        </div>
+        <p class="puzzle-subtitle">Nine letters. Six chances. One little secret.</p>
+        <div id="board" class="board" aria-label="Word puzzle board"></div>
+        <form id="guess-form" class="guess-form" autocomplete="off">
+          <label class="guess-label" for="guess-input">Enter thy nine-letter guess</label>
+          <input id="guess-input" class="guess-input" type="text" inputmode="text"
+            enterkeyhint="go" autocapitalize="characters" autocomplete="off"
+            autocorrect="off" spellcheck="false" maxlength="9" minlength="9"
+            pattern="[A-Za-z]{9}" placeholder="TYPE YOUR GUESS"
+            aria-label="Enter a nine-letter guess" required />
+          <button id="submit-guess" class="submit-key" type="submit">Unlock the secret <span>✧</span></button>
+        </form>
+        <p id="status" class="status" aria-live="polite">Use thy device keyboard. Press Enter when ready.</p>
+      </div>
+      <p class="gate-foot">A promise written in starlight <span>♥</span></p>
+    </section>
+
+    <section id="letter-screen" class="letter-screen hidden" aria-hidden="true">
+      <div class="reveal-caption">✧ THE GATES OF MY HEART ARE OPEN ✧</div>
+      <article class="letter-card">
+        <div class="corner corner-tl">❧</div><div class="corner corner-tr">❧</div>
+        <div class="corner corner-bl">❧</div><div class="corner corner-br">❧</div>
+        <div class="card-topline"><span>✦</span> A LETTER FROM MY HEART <span>✦</span></div>
+        <div class="floral-rule"><i>❦</i></div>
+        <p class="dedication">To My Dearest Queen</p>
+        <h2>Five Months <span>of Us</span></h2>
+        <p class="date-line">A small eternity, written in the stars</p>
+        <div class="heart-divider">♡ &nbsp; ✧ &nbsp; ♡</div>
+
+        <div class="poem">
+          <p>My fairest love, if time were but a quill,<br>
+          And every star a word upon its page,<br>
+          I'd write of thee through centuries still,<br>
+          And make eternity our marriage stage.</p>
+
+          <p>Five moons have passed since fate, with gentle hand,<br>
+          Did weave our souls beneath one heaven's glow;<br>
+          Yet still my heart, as though enchanted, stands,<br>
+          In wondrous awe of all thy love doth show.</p>
+
+          <p>Thou art my dawn when all the skies are grey,<br>
+          My sweetest dream that waking cannot sever;<br>
+          And should the stars themselves fade away,<br>
+          My love for thee shall know no end, nor ever.</p>
+
+          <p>For in this royal paradise of mine,<br>
+          No crown, no throne, no treasure could compare;<br>
+          For all the kingdoms underneath the sky,<br>
+          Are but poor shadows next to thee, my fairest rare.</p>
+        </div>
+
+        <div class="royal-quote">
+          <span class="quote-mark">“</span>
+          In the Royal Paradise of my heart, thou art not merely my queen; thou art the kingdom, the crown, and every star that makes my universe divine.
+          <span class="quote-mark closing">”</span>
+        </div>
+
+        <div class="heart-divider">✧ &nbsp; ❦ &nbsp; ✧</div>
+        <div class="closing-message">
+          <p>Happy Five-Monthversary, my love.</p>
+          <p>Five months may seem like a little chapter in eternity, but with thee, every second has become a lifetime worth cherishing. If I could choose again, across a thousand lifetimes and a million stars, my heart would still find its way to thee.</p>
+        </div>
+        <p class="forever">Forever thine, through every lifetime. <span>❤️</span></p>
+        <div class="card-bottom">SEALED WITH ALL MY LOVE &nbsp; ✦ &nbsp; ALWAYS</div>
+      </article>
+      <div class="music-control">
+        <button id="music-toggle" type="button" aria-pressed="false">♫ <span>Play our music</span></button>
+      </div>
+    </section>
+  </main>
+
+  <audio id="background-music" loop preload="none">
+    <source src="assets/our-song.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
